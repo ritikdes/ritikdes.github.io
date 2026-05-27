@@ -17,11 +17,12 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
+    <button class="hamburger" id="hamburger">☰</button>
 </nav>
 
 <!-- Hero -->
 <section id="hero">
-    <h1>Hi, I'm <span class="highlight">Ritik Deshemaru</span></h1>
+    <h1>Hi, I'm <span id="typed-name" class="highlight"></span></h1>
     <p>Computer Engineering Student | Python Developer</p>
     <div class="hero-buttons">
         <a href="#projects" class="btn-primary">View My Work</a>
@@ -108,8 +109,23 @@
 </section>
 
 <!-- Contact -->
-<section id="contact">
-    <h2>Get In Touch</h2>
-    <a href="mailto:ritikdesemaru12@gmail.com" class="email-link">ritikdesemaru12@gmail.com</a>
-    <a href="https://github.com/ritikdes">GitHub</a>
-</section>
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <p>Let's collaborate on backend development, API infrastructure, or automated tooling systems.</p>
+        
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn-primary">Send Message</button>
+            <p id="form-message"></p>
+        </form>
+
+        <div class="social-links">
+            <a href="https://github.com/ritikdes" target="_blank">GitHub Profile</a>
+        </div>
+    </section>
+
+<script src="script.js"></script>
+</body>
+</html>
